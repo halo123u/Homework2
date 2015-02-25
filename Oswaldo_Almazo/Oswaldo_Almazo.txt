@@ -1,0 +1,51 @@
+Oswaldo Almazo	
+Hw #2
+Csci 391
+1.	It’s a NPL because it the programmer must tell the program what to do.
+2.	Data must be stored in logical order using tables that is divided in rows and cells.
+3.	SQL is used to retrieve and provide organized data
+4.	Normalization reduces the amount of repetition and complexity of the structure of the previous level
+5.	One is lower case and the other is upper case SQL is usually not sensitive case but programmers should be careful in order to keep data reliable.
+6.	a)The * select is missing FROM 
+b)The * select from is missing a semicolon at the end
+c) Select amount name payee FROM checks; is missing commas in between each column name.
+7.	all of the above work.
+8.	Select officerid,topCharge FROM nysid;
+9.	Select topCharge,officerid FROM nysid;
+10.	SELECT DISTINCT topCharges FROM nysid;
+11.	SELECT * FROM FRIENDS WHERE LASTNAME LIKE 'M%';
+12.	SELECT * FROM FRIENDS
+	WHERE STATE = 'IL'
+AND FIRSTNAME = 'AL';
+13.	Where a BETWEEN  10 AND 30;
+14.	Nothing would be returned since both conditions are not true.
+15.	SQL> SELECT (FIRSTNAME || 'FROM') NAME, STATE
+                FROM DoubleAgents
+                WHERE STATE = 'IL'
+                AND
+                LASTNAME = 'BUNDY';
+16.	SQL>SELECT LASTNAME || ',' || FIRSTNAME NAME,
+ AREACODE || '-' || PHONE PHONE
+ FROM DoubleAgents
+ WHERE AREACODE BETWEEN 300 AND 400;
+17.	INITCAP
+18.	Group functions and aggregate functions are the same
+19.	Yes it will return the total of rows
+20.	It will not work because lastname is a character field
+21.	The CONCAT function and the || symbol
+22.	37 is the number of records
+23.	No its missing the () around lastName
+24.	SELECT NAME FROM SHOOTSTATS
+WHERE (HITS/ABS)< .25;
+25.	
+select substr(firstname,1,1)||'.'||
+            substr(middlename,1,1)||'.'||
+            substr(lastname,1,1)||'.' INITIALS, code
+     from officers
+     where code = 32;
+26.	STARTING WITH
+27.	The GROUP BY groups the data results and the ORDER BY acts like group by.
+28.	No wrong syntax group by has to be used before order by.
+29.	Yes
+30.	Yes, it is not necessary to use the SELECT statement on a column that you put in the ORDER BY clause.
+31.	The output shows the number of people on each team with a SICKLEAVE balance of 30 days or more.
